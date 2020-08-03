@@ -5,16 +5,14 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      name: 'Book List',
-      data() {
-        return {
-          title: 'All Books'
-        }
-      }
-    },
+export default {
+  name: 'Book List',
+  data() {
+    return {
+      title: 'All Books'
+    }
   }
+}
 </script>
 
 <style>
