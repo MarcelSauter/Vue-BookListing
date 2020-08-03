@@ -7,11 +7,11 @@
 <script>
   export default {
     props: {
-      name: String,
-      title: String,
+      name: 'Book List',
       data() {
-        this.title = 'All Books';
-        return this.title;
+        return {
+          title: 'All Books'
+        }
       }
     },
   }
