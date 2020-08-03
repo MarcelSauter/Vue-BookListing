@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form class="" action="#" method="post" onsubmit="bookSubmit(bookTitle, bookAuthor)">
+    <form class="" action="#" method="post" v-on="bookSubmit(bookTitle, bookAuthor)">
       <input
         type="text"
         name="title"
