@@ -2,16 +2,13 @@
   <div>
     <h1>{{ title }}</h1>
     <ul>
-      <book-item v-bind:about="books"></book-item>
+      <li v-for="book in books">{{ book.title }}:{{ book.author }}</li>
     </ul>
   </div>
 </template>
 
 <script>
-import BookItem from './BookItem';
-
 export default {
-  components: { BookItem },
   name: 'Book List',
   data() {
     return {
@@ -34,10 +31,5 @@ export default {
   ul {
     list-style-type: none;
     padding: 0;
-  }
-
-  li {
-    display: block;
-    margin: 0 10px;
   }
 </style>
